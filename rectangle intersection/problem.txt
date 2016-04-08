@@ -1,5 +1,0 @@
-Given two rectangles (a set of four points, each with a double x and y coordinate) determine if any of the lines making up the two shapes intersect.
-
-Bonus: find the intersection point(s)
-
-You are guaranteed that these will be two rectangles (2 sets of parallel sides, 2 sets of sides the same length) rather than just two quadrilaterals
