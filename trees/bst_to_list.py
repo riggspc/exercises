@@ -1,0 +1,4 @@
+# Problem:
+# Given a pointer to the root node of a binary search tree, write a method that will convert that tree (in place if possible)
+# to a sorted linked list
+# Assume that the left and right pointers for the tree can be used for the previous and next pointers for the list
