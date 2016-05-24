@@ -1,2 +1,0 @@
-# Problem:
-# Given a singly-linked list, write a method to return the element that is kth from the end

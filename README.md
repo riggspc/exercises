@@ -1,4 +1,6 @@
 exercises
 =========
 
-A collection of programming expercises and solutions I've worked on for practice. As of right now they're in Python, since that is my language of choice for interviews. The concepts for many of these problems are from McDowell's *Cracking the Coding Interview*
+A collection of programming expercises and solutions I've worked on for practice. The concepts for many of these problems are from McDowell's *Cracking the Coding Interview*
+
+The solutions for these questions are in a number of languages. Feel free to create a pull request if you'd like to solve a problem in a language of your choice, even if it's already been solved.
