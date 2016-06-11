@@ -8,7 +8,7 @@ using std::cout;
 */
 
 template <typename T>
-SinglyLinkedList<T>* kthFromEnd(SinglyLinkedList<T>* ll, int k)
+SinglyLinkedList<T>* KthFromEnd(SinglyLinkedList<T>* ll, int k)
 {
     // Fill me in
     return nullptr;
@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
 // Helper method definitions
 void RunSingleTestCase(int testCaseNumber, SinglyLinkedList<int>* ll, int k, int expectedValue, bool expectNull)
 {
-    auto result = kthFromEnd(ll, k);
+    auto result = KthFromEnd(ll, k);
 
     if (!expectNull)
     {
@@ -47,7 +47,7 @@ void RunSingleTestCase(int testCaseNumber, SinglyLinkedList<int>* ll, int k, int
         }
         else
         {
-            cout << "Testcase " << testCaseNumber << " FAILED: received a null return result from kthFromEnd\n";
+            cout << "Testcase " << testCaseNumber << " FAILED: received a null return result from KthFromEnd\n";
         }
     }
     else
@@ -95,4 +95,6 @@ void RunTestCases()
 
     // Testcase 7: a null linked list aka a list with 0 nodes. Error case caveat.
     RunSingleTestCase(/*testCaseNumber*/7, nullptr, /*k*/1, /*expectedValue*/0, /*expectNull*/true);
+
+    DeleteSinglyLinkedListAndContents(simpleLinkedList);
 }
