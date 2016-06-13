@@ -1,7 +1,10 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
+#include <iostream>
 #include <assert.h>
+
+using std::cout;
 
 // This file defines two extremely simple linked list node structs, one for a singly linked list
 // (with only a 'next' pointer) and one for a doubly linked list ('previous' pointer in addition

@@ -1,9 +1,7 @@
 #include <assert.h>
-#include <iostream>
 
 #include "LinkedList.h"
 
-using std::cout;
 
 SinglyLinkedList<int>* CreateSequentialSinglyLinkedList(int length)
 {
