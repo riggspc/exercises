@@ -1,0 +1,3 @@
+Write a method that takes in an array of comparable elements and an integer k and returns the kth most common element
+in that array
+Ex. {0, 1, 1, 2, 2, 2, 2, 3, 3, 3}, k as 2 => returns 3

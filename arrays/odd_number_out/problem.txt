@@ -1,0 +1,3 @@
+Create a method that takes a  given an array of integers of odd length and exactly one number that does not have twin in the array
+determines which number that is. Your goal for this should be linear time and O(1) space complexity
+Ex. Given {0, 1, 2, 2, 2, 2, 1, 0, 4} => return 4
