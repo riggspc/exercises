@@ -1,6 +1,10 @@
 # A solution to problem.txt in Python with test cases :)
 # To try this on your own simply delete the contents of string_compression and fill it in yourself
 
+# Enter any assumptions you're making about about the problem or any notes you want taken into account here
+# - Currently this method assumes that you will get a string of letters (no spaces or numbers or other
+#   characters) as input
+
 # This method requires a string. It returns a compressed string version of the input following the
 # spec of the problem in problem.txt
 def string_compression(string):
