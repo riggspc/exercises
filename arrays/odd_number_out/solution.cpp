@@ -1,17 +1,92 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
+#include <assert.h>
 
 using std::cout;
 using std::vector;
+using std::unordered_map;
 
 // Enter any assumptions you're making about the problem or any notes you want taken into account here
 /*
+    - We are assuming that we will always get valid input. If that wasn't the case we could simply
+      assert that these invariants hold true at the beginning of FindOddNumberOut or define what error
+      cases should return
 */
 
-int FindOddNumberOut(vector<int> array)
+int GoodSolution(const vector<int>& array);
+int BetterSolution(const vector<int>& array);
+
+// To try this problem on your own simply delete GoodSolution and BetterSolution and don't
+// read the hints below in FindOddNumberOut
+
+// This method takes an array of integers guaranteed to be of matching pairs and one odd integer
+// without a match and returns what that odd integer out is
+int FindOddNumberOut(const vector<int>& array)
 {
-    // Fill me in
-    return 0;
+    // There are actually two solutions I'll put here. One of them is a 'good' solution,
+    // with O(n) time and space complexity. The other is the 'better' solution, with O(n)
+    // time complexity but O(1) space complexity. The better solution is a bit tougher
+    // to get.
+
+    // return GoodSolution(array);
+    return BetterSolution(array);
+}
+
+// This solution uses a hash map to keep track of how many times we've seen each number
+// Then after we loop through the array it's easy to go through the hash map and determine
+// which number has been seen an odd number of times and is thus the odd man out
+// Time complexity: O(n)
+// Space complexity: O(n)
+int GoodSolution(const vector<int>& array)
+{
+    unordered_map<int, int> seenNumbers;
+    int arraySize = array.size();
+
+    // Store the numbers from array in the hash map
+    for (int i = 0; i < arraySize; i++)
+    {
+        auto it = seenNumbers.find(array[i]);
+        if (it == seenNumbers.end())
+        {
+            seenNumbers[array[i]] = 1;
+        }
+        else
+        {
+            it->second++;
+        }
+    }
+
+    // Iterate through the hash map to find the entry with an odd count
+    for (auto it = seenNumbers.begin(); it != seenNumbers.end(); it++)
+    {
+        if (it->second % 2 == 1)
+        {
+            return it->first;
+        }
+    }
+
+    // We should never get here - there should always be an entry in the hash
+    // table that has an odd count
+    assert(false);
+}
+
+// This solution uses bitwise arithmetic (specifically XOR) on all of the elements
+// in the array. Since n XOR n == 0 and n XOR 0 == n we should be left with the odd
+// number out after all XORing all of the numbers together
+// Time complexity: O(n)
+// Space complexity: O(1)
+int BetterSolution(const vector<int>& array)
+{
+    int oddNumber = 0;
+    int arraySize = array.size();
+
+    for (int i = 0; i < arraySize; i++)
+    {
+        oddNumber ^= array[i];
+    }
+
+    return oddNumber;
 }
 
 // Helper method declarations. Definitions near the bottom of the file.
