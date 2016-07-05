@@ -1,0 +1,2 @@
+Write a method that takes in a string representing a number of sentences and returns the most common word in the string. If multiple words are tied it returns the one that comes first in alphabetical order.
+Note that capital letters do not matter here - "World" and "world" are treated as the same word

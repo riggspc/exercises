@@ -1,0 +1,2 @@
+Write a method to determine if a string is a palindrome (the same forwords as it is backwards.
+It is up to you to determine additional criteria for if a string is a palindrome (how to handle spaces, capital letters, etc)

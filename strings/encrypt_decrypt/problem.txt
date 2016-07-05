@@ -1,0 +1,2 @@
+You must write two methods for this problem. The first takes in a string and a key and returns a simple substitution cypher version of that string. The second takes a string and a key and decrypts that string, assuming the substitution cypher of the first method.
+You can assume that both input strings will be made up of uppercase letters and the return values should as well. In other words, we should be able to round-trip.
