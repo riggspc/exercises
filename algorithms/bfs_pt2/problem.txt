@@ -1,0 +1,2 @@
+For this problem you will be given a two-dimensional array of characters that will either be 0, 1, or X. There will be exactly 1 number 1, which you must find via breadth first search and then print the shortest path to the index of the 1 from the starting point [0, 0] on the array. You can move to any adjacent space, including diagonally.
+In this problem 0s represent "empty" spaces while Xs represent "walls". You obviously cannot travel to a space that contains a wall.
