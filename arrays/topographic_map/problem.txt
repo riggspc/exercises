@@ -1,0 +1,3 @@
+Given a two dimensional array of integers representing a topographic map of elevations determine which areas of the map will collect water when it rains
+
+Hint: such areas will be areas of low elevation that are completely surrounded by areas of higher elevation
