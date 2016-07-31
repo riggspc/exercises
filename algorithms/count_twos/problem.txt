@@ -1,0 +1,1 @@
+Write a method that takes in a positive integer and outputs the number of '2's in all the numbers from 0 to that number. Note that numbers like "22" count as 2 2s.

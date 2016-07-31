@@ -1,0 +1,10 @@
+Write a method that takes in a positive integer representing a number of cents and then outputs, in order of greatest value to least, the number and type of coins required to make change for that number of cents. This must be done using the most minimal amount of coins possible.
+
+For ease of testability output your answer in a vector, with each cell representing a coin and holding the value of that coin. For example:
+
+input > 57
+output > [25, 25, 5, 1, 1]
+
+You should make a note of the time and space complexity of your approach as well as if your approach is using a certain algorithm or family of algorithms.
+
+PS: in case there's any confusion you're using the 'usual' American coins, which are of values 25, 10, 5, and 1. Half dollars, full dollars, etc are not allowed.

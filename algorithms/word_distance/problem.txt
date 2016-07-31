@@ -1,0 +1,1 @@
+You're given a large string of words. For simplicity assume there's no punctuation. Write a method that returns the shortest distance between two given words in that string or -1 if either of the two words does not exist in the string. How you handle upper vs lowercase is up to you.
