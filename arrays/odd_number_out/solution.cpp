@@ -90,7 +90,7 @@ int BetterSolution(const vector<int>& array)
 }
 
 // Helper method declarations. Definitions near the bottom of the file.
-void RunSingleTestCase(int testCaseNumber, vector<int> array, int expectedValue);
+void RunSingleTestCase(int testCaseNumber, const vector<int>& array, int expectedValue);
 void RunTestCases();
 
 // This method shouldn't be very interesting to you
@@ -102,7 +102,7 @@ int main(int argc, char const *argv[])
 }
 
 // Helper methods for running testCaseNumber
-void RunSingleTestCase(int testCaseNumber, vector<int> array, int expectedValue)
+void RunSingleTestCase(int testCaseNumber, const vector<int>& array, int expectedValue)
 {
     cout << "Testcase " << testCaseNumber;
     int result = FindOddNumberOut(array);
