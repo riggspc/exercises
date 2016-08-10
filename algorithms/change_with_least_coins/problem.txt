@@ -5,6 +5,6 @@ For ease of testability output your answer in a vector, with each cell represent
 input > 57
 output > [25, 25, 5, 1, 1]
 
-You should make a note of the time and space complexity of your approach as well as if your approach is using a certain algorithm or family of algorithms.
+You should make a note of the time and space complexity of your approach.
 
 PS: in case there's any confusion you're using the 'usual' American coins, which are of values 25, 10, 5, and 1. Half dollars, full dollars, etc are not allowed.

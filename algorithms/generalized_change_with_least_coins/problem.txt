@@ -1,0 +1,3 @@
+Write a method that takes in a positve integer, representing a number of cents, as well as an array representing denominations of coins available. You have access to as many coins of these denominations as you'd like. Determine the least number of coins needed to make change for the value given. If possible also output what those coins are.
+
+You should make a note of the time and space complexity as well as if your approach is using a certain algorithm or family of algorithms.
