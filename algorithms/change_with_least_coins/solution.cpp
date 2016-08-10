@@ -6,6 +6,11 @@ using std::vector;
 
 // Enter any assumptions you're making about the problem or any notes you want taken into account here
 /*
+    Time complexity: O(n) where n is the target number of cents. In reality it'll be much less than this but it will scale
+    with the size of the input.
+
+    Space complexity: O(n) since we're called upon to output the coins used to make change in a vector. If we simply had
+    to output the number of coins needed to make change then it would be O(1).
 */
 
 // Method headers
@@ -14,11 +19,44 @@ void RunSingleTestCase(int testCaseNumber, int numCents, vector<int> expected);
 void RunTestCases();
 void PrintVector(const vector<int>& v);
 
-// Fill in your solution here
+// This solution is using a simple greedy algorithm. Since the coins are known and pennies exist (making it always possible
+// to make change since their value is 1) we can simply add the largest possible coin until we've reached the target value
 vector<int> Solution(int numCents)
 {
-    vector<int> out = {0};
-    return out;
+    vector<int> output = {};
+    int valueSoFar = 0;
+
+    while (valueSoFar != numCents)
+    {
+        int centsRemaining = numCents - valueSoFar;
+
+        if (centsRemaining >= 25)
+        {
+            // Add a quarter
+            valueSoFar += 25;
+            output.push_back(25);
+        }
+        else if (centsRemaining >= 10)
+        {
+            // Add a dime
+            valueSoFar += 10;
+            output.push_back(10);
+        }
+        else if (centsRemaining >= 5)
+        {
+            // Add a nickel
+            valueSoFar += 5;
+            output.push_back(5);
+        }
+        else
+        {
+            // Add a penny
+            valueSoFar += 1;
+            output.push_back(1);
+        }
+    }
+
+    return output;
 }
 
 int main(int argc, char const *argv[])
