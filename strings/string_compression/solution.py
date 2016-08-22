@@ -1,4 +1,4 @@
-# A solution to problem.txt in Python with test cases :)
+# A solution to the problem.txt in Python with test cases :)
 # To try this on your own simply delete the contents of string_compression and fill it in yourself
 
 # Enter any assumptions you're making about about the problem or any notes you want taken into account here

@@ -1,2 +1,6 @@
 # C++ compiled source
 *.o
+
+*.db
+
+*.db-wal
