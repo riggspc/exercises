@@ -1,6 +1,9 @@
 # C++ compiled source
 *.o
 
+# Visual Studio Code files
 *.db
-
 *.db-wal
+
+# Mac junk
+.DS_Store
