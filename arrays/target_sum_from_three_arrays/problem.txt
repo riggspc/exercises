@@ -1,0 +1,1 @@
+Given three arrays of integers and an integer 'n' write a method that returns true if there are three elements, one from each array, that add up to be n and false if no three such numbers exist
